@@ -31,7 +31,7 @@ $( document ).ready(function() {
 		swap.css('display', 'inline');
 		$('#swap-message').css('display', 'none').delay(1000).fadeIn(500).html(swap);
 		$('.first-child').css({'color': 'blue', 'position': 'relative'}).animate({
-			left: '-50px'
+			left: '-1em'
 		}, {
 			duration: 3000,
 			step: function( now, fx ) {

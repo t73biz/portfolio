@@ -19,38 +19,11 @@ a:focus {
 }
 
 .artifact img {
-	border: 10px #337AB7 dotted;
-	border-radius: 25%;
-    position:relative;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-.artifact img:before, .artifact img:after
-{
-    content:"";
-    position:absolute;
-    z-index:-1;
-    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:10px;
-    bottom:10px;
-    left:0;
-    right:0;
-    -moz-border-radius:100px / 10px;
-    border-radius:100px / 10px;
-}
-.artifact img:after
-{
-    right:10px;
-    left:auto;
-    -webkit-transform:skew(8deg) rotate(3deg);
-       -moz-transform:skew(8deg) rotate(3deg);
-        -ms-transform:skew(8deg) rotate(3deg);
-         -o-transform:skew(8deg) rotate(3deg);
-            transform:skew(8deg) rotate(3deg);
-}
+
 
 .label {
 	color: white;
@@ -66,7 +39,6 @@ a:focus {
 				0 5px 10px rgba(0,0,0,.25),
 				0 10px 10px rgba(0,0,0,.2),
 				0 20px 20px rgba(0,0,0,.15);
-	font-size: 150%;
 }
 
 .message {
@@ -97,12 +69,12 @@ a:focus {
 
 .wheel-0-social {
 	background-color: #333;
-	border: 25px solid black;
+	border: 1em solid black;
 	border-radius: 50%;
-	height: 300px;
+	height: 20em;
 	padding: 20px;
 	text-align: center;
-	width: 300px;
+	width: 20em;
 }
 
 .wheel-0-social:hover {
@@ -115,12 +87,23 @@ a:focus {
 #about {
 	background-image: linear-gradient(#fff, rgba(0,0,0,0.4));
 	height: 100%;
-	padding-top: 50px;
+	padding-top: 5em;
+}
+
+#about h2 {
+	font-size: 1.5em;
+}
+
+#about h3,
+#about ul {
+	font-size: .9em;
+	padding: 0;
 }
 
 #contact {
 	height: 100%;
 	padding-top: 50px;
+	text-align: center;
 }
 
 #contact h2 {
@@ -133,21 +116,10 @@ a:focus {
 	transform: rotate(-90deg);
 }
 
-#descriptors {
-	margin-right:auto;
-	margin-left:auto;
-	width:70%;
-}
-
-#header {
-	min-height: 100%;
-	position: relative;
-}
-
 #home {
 	background-image: linear-gradient(to right, #fff, rgba(0,0,0,0.4)), url('../images/jumbo-bg.jpg');
-	background-size: contain;
-	background-position: right;
+	background-size: cover;
+	background-position: top;
 	background-repeat: no-repeat;
 	border-radius: 25px;
 }
@@ -163,10 +135,11 @@ a:focus {
 #port-head {
 	text-align: center;
 }
+
 #portfolio {
 	background-image: linear-gradient(rgba(0,0,0,0.4), #fff);
 	height: 100%;
-	padding-top: 50px;
+	padding-top: 5em;
 }
 
 #spoke-one {
@@ -215,12 +188,46 @@ a:focus {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+	.label {
+		color: #000;
+		text-shadow:0 0 0 #000;
+	}
+	#about {
+		height: 25em;
+	}
+	#contact {
+		height: 20em;
+	}
+	#contact h2 {
+		font-size: 2em;
+		left: 0;
+		top: 0;
+		position: relative;
+		-ms-transform: rotate(0); /* IE 9 */
+		-webkit-transform: rotate(0); /* Safari */
+		transform: rotate(0);
+	}
+	#home h1 {
+		background-color: rgba(0, 0, 0, 0.5);
+		color: #fff;
+	}
+	#home p {
+		text-align: left;
+	}
+	#invis {
+		display: none;
+	}
+	#portfolio {
+		height: 15em;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+	#home h1 {
+		background-color: transparent;
+		color: #000;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -230,10 +237,24 @@ a:focus {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	#invis {
+		display: block;
+	}
+	#about {
+		font-size: 1.5em;
+		height: 20em;
+		padding-left: 1.5em;
+		padding-top: 0;
+	}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+	.label {
+		font-size: 2em;
+	}
+	#home h1 {
+		background-color: transparent;
+		color: #333;
+	}
 }
