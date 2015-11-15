@@ -1,0 +1,260 @@
+/**
+ * DOM Elements
+ */
+html, body {
+	font-family: 'Nova Mono', monospace;
+	height: 100%;
+	width: 100%;
+}
+
+a:focus {
+	outline: none;
+}
+/**
+ * Classes
+ */
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+.artifact img {
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+.label {
+	color: white;
+	text-shadow:0 1px 0 #ccc,
+				0 2px 0 #c9c9c9,
+				0 3px 0 #bbb,
+				0 4px 0 #b9b9b9,
+				0 5px 0 #aaa,
+				0 6px 1px rgba(0,0,0,.1),
+				0 0 5px rgba(0,0,0,.1),
+				0 1px 3px rgba(0,0,0,.3),
+				0 3px 5px rgba(0,0,0,.2),
+				0 5px 10px rgba(0,0,0,.25),
+				0 10px 10px rgba(0,0,0,.2),
+				0 20px 20px rgba(0,0,0,.15);
+}
+
+.message {
+	list-style: none;
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-400%, 0, 0) rotate3d(0, 0, 1, -360deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rollIn {
+  animation-name: rollIn;
+}
+
+.spoke {
+	display: inline-block;
+	font-size: 5em;
+	position: relative;
+}
+
+.wheel-0-social {
+	background-color: #333;
+	border: 1em solid black;
+	border-radius: 50%;
+	height: 20em;
+	padding: 20px;
+	text-align: center;
+	width: 20em;
+}
+
+.wheel-0-social:hover {
+	background-color: #000;
+}
+
+/**
+ * IDs
+ */
+#about {
+	background-image: linear-gradient(#fff, rgba(0,0,0,0.4));
+	height: 100%;
+	padding-top: 5em;
+}
+
+#about h2 {
+	font-size: 1.5em;
+}
+
+#about h3,
+#about ul {
+	font-size: .9em;
+	padding: 0;
+}
+
+#contact {
+	height: 100%;
+	padding-top: 50px;
+	text-align: center;
+}
+
+#contact h2 {
+	font-size: 400%;
+	left: -25%;
+	top: -350px;
+	position: relative;
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	-webkit-transform: rotate(-90deg); /* Safari */
+	transform: rotate(-90deg);
+}
+
+#home {
+	background-image: linear-gradient(to right, #fff, rgba(0,0,0,0.4)), url('../images/jumbo-bg.jpg');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	border-radius: 25px;
+}
+
+#invis {
+	height: 300px;
+}
+
+#invis-text {
+	display: none;
+}
+
+#port-head {
+	text-align: center;
+}
+
+#portfolio {
+	background-image: linear-gradient(rgba(0,0,0,0.4), #fff);
+	height: 100%;
+	padding-top: 5em;
+}
+
+#spoke-one {
+	-ms-transform: rotate(-55deg); /* IE 9 */
+	-webkit-transform: rotate(-55deg); /* Safari */
+	transform: rotate(-55deg);
+}
+
+#spoke-two {
+
+	top: -30px;
+	left: 15px;
+}
+
+#spoke-three {
+	top: 10px;
+	left: 15px;
+	-ms-transform: rotate(65deg); /* IE 9 */
+	-webkit-transform: rotate(65deg); /* Safari */
+	transform: rotate(65deg);
+}
+
+#spoke-four {
+	top: -10px;
+	left: -5px;
+	-ms-transform: rotate(245deg); /* IE 9 */
+	-webkit-transform: rotate(245deg); /* Safari */
+	transform: rotate(245deg);
+}
+
+#spoke-five {
+	top: 40px;
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Safari */
+	transform: rotate(180deg);
+}
+
+#spoke-six {
+	top: -5px;
+	left: 10px;
+	-ms-transform: rotate(115deg); /* IE 9 */
+	-webkit-transform: rotate(115deg); /* Safari */
+	transform: rotate(115deg);
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	.label {
+		color: #000;
+		text-shadow:0 0 0 #000;
+	}
+	#about {
+		height: 25em;
+	}
+	#contact {
+		height: 20em;
+	}
+	#contact h2 {
+		font-size: 2em;
+		left: 0;
+		top: 0;
+		position: relative;
+		-ms-transform: rotate(0); /* IE 9 */
+		-webkit-transform: rotate(0); /* Safari */
+		transform: rotate(0);
+	}
+	#home h1 {
+		background-color: rgba(0, 0, 0, 0.5);
+		color: #fff;
+	}
+	#home p {
+		text-align: left;
+	}
+	#invis {
+		display: none;
+	}
+	#portfolio {
+		height: 15em;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	#home h1 {
+		background-color: transparent;
+		color: #000;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	#invis {
+		display: block;
+	}
+	#about {
+		font-size: 1.5em;
+		height: 20em;
+		padding-left: 1.5em;
+		padding-top: 0;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.label {
+		font-size: 2em;
+	}
+	#home h1 {
+		background-color: transparent;
+		color: #333;
+	}
+}
