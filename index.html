@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Portfolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Nova+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/base.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+	<!-- Nav Start -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-top" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="http://t73.biz" target="_blank">Ronald Chaplin</a>
+			</div>
+		      <div class="collapse navbar-collapse" id="nav-top">
+		        <ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+		        </ul>
+		      </div>
+		</div>
+	</nav>
+	<!-- Nav End -->
+	<!-- Header Start -->
+	<div class="container" id="header">
+		<div class="jumbotron clearfix" id="home">
+			<h1>Ronald Chaplin</h1>
+			<div class="col-md-3" id="invis">
+				<p id="invis-text"></p>
+			</div>
+			<p class="col-md-4">This is my personal portfolio. You can access my social details with the wheel-0-social.</p>
+			<div class="col-md-1 animated rollIn wheel-0-social">
+				<div class="spoke" id="spoke-one">
+					<a href="https://github.com/t73biz" target="_blank" title="Github"><span class="fa fa-github"></span></a>
+				</div>
+				<div class="spoke" id="spoke-two">
+					<a href="https://plus.google.com/+RonChaplin702/posts" target="_blank" title="Google Plus"><span class="fa fa-google-plus"></span></a>
+				</div>
+				<div class="spoke" id="spoke-three">
+					<a href="https://twitter.com/t73biz" target="_blank" title="Twitter"><span class="fa fa-twitter"></span></a>
+				</div>
+				<div class="spoke" id="spoke-four">
+					<a href="http://codepen.io/t73biz/" target="_blank" title="Codepen"><span class="fa fa-codepen"></span></a>
+				</div>
+				<div class="spoke" id="spoke-five">
+					<a href="http://www.freecodecamp.com/t73biz" target="_blank" title="Free Code Camp"><span class="fa fa-fire"></span></a>
+				</div>
+				<div class="spoke" id="spoke-six">
+					<a href="https://www.linkedin.com/in/t73biz" target="_blank" title="Linked In"><span class="fa fa-linkedin"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header End -->
+	<!-- About Start -->
+	<div class="container-fluid" id="about">
+		<div class="row">
+			<h2 class="col-md-5 col-md-push-7">Who is Ronald Chaplin?</h2>
+		</div>
+		<div class="row" id="descriptors">
+			<div class="col-md-4">
+				<h3>He is ...</h3>
+				<ul class="message">
+					<li><span class="first-child">E</span>nthusiastic</li>
+					<li><span class="first-child">T</span>enacious</li>
+					<li><span class="first-child">H</span>elpful</li>
+					<li><span class="first-child">I</span>ntelligent</li>
+					<li><span class="first-child">C</span>aring</li>
+					<li><span class="first-child">A</span>ctive</li>
+					<li><span class="first-child">L</span>ogical</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h3>He makes ...</h3>
+				<ul class="message">
+					<li><span class="first-child">W</span>idgets</li>
+					<li><span class="first-child">E</span>ncoders</li>
+					<li><span class="first-child">B</span>elieve</li>
+					<li><span class="first-child">S</span>oftware</li>
+					<li><span class="first-child">I</span>nformation</li>
+					<li><span class="first-child">T</span>hemes</li>
+					<li><span class="first-child">E</span>xperiments</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h3>He likes ...</h3>
+				<ul class="message">
+					<li><span class="first-child">C</span>oding</li>
+					<li><span class="first-child">R</span>esponsiveness</li>
+					<li><span class="first-child">E</span>ating</li>
+					<li><span class="first-child">A</span>ngularJS</li>
+					<li><span class="first-child">T</span>echno</li>
+					<li><span class="first-child">O</span>ld-school</li>
+					<li><span class="first-child">R</span>obots</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<h3 class="col-md-4 col-md-push-2"><button type="button" class="btn btn-success" id="revealer">Click</button> to see what else he is...</h3>
+			<h3 class="col-md-4 col-md-push-2" id="swap-message">------- ------- -------</h3>
+			<p id="hidden-swap" style="display:none;"><a href="https://www.linkedin.com/pulse/industry-standard-lie-im-going-unemployed-long-time-ronald-chaplin" target="_blank">If the industry standard is to lie, I'm going to be unemployed for a long time</a> -- An article I wrote on LinkedIn.</p>
+		</div>
+	</div>
+	<!-- About end -->
+	<!-- Portfolio Start -->
+	<div class="container-fluid" id="portfolio">
+		<div class="row" id="port-head">
+			<h2>Portfolio</h2>
+			<p>[pawrt-<b>foh</b>-lee-oh]</p>
+
+		</div>
+		<div class="row">
+			<div class="col-md-4 artifact"><img class="img-responsive" src="images/t73biz.png" /></div>
+			<div class="col-md-4 artifact"><img class="img-responsive" src="images/bpong.png" /></div>
+			<div class="col-md-4 artifact"><img class="img-responsive" src="images/onp.png" /></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 label">t73.biz</div>
+			<div class="col-md-4 label">bpong.com</div>
+			<div class="col-md-4 label">overnightprints.com</div>
+		</div>
+
+	</div>
+	<div class="container-fluid" id="contact">
+		<div class="row">
+			<h2>Contact Me!</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-1 animated rollIn wheel-0-social">
+				<div class="spoke" id="spoke-one">
+					<a href="https://github.com/t73biz" target="_blank" title="Github"><span class="fa fa-github"></span></a>
+				</div>
+				<div class="spoke" id="spoke-two">
+					<a href="https://plus.google.com/+RonChaplin702/posts" target="_blank" title="Google Plus"><span class="fa fa-google-plus"></span></a>
+				</div>
+				<div class="spoke" id="spoke-three">
+					<a href="https://twitter.com/t73biz" target="_blank" title="Twitter"><span class="fa fa-twitter"></span></a>
+				</div>
+				<div class="spoke" id="spoke-four">
+					<a href="http://codepen.io/t73biz/" target="_blank" title="Codepen"><span class="fa fa-codepen"></span></a>
+				</div>
+				<div class="spoke" id="spoke-five">
+					<a href="http://www.freecodecamp.com/t73biz" target="_blank" title="Free Code Camp"><span class="fa fa-fire"></span></a>
+				</div>
+				<div class="spoke" id="spoke-six">
+					<a href="https://www.linkedin.com/in/t73biz" target="_blank" title="Linked In"><span class="fa fa-linkedin"></span></a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<p class="col-md-6 col-md-push-4">You can message me through any of these channels. I am available just about everday.</p>
+		</div>
+		<div class="row">
+			<p class="col-md-6 col-md-push-4">Well, That's All Folks!</p>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" charset="utf-8"></script>
+	<script src="js/portfolio.js" charset="utf-8"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

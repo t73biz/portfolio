@@ -1,0 +1,239 @@
+/**
+ * DOM Elements
+ */
+html, body {
+	font-family: 'Nova Mono', monospace;
+	height: 100%;
+	width: 100%;
+}
+
+a:focus {
+	outline: none;
+}
+/**
+ * Classes
+ */
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+.artifact img {
+	border: 10px #337AB7 dotted;
+	border-radius: 25%;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.artifact img:before, .artifact img:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.artifact img:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.label {
+	color: white;
+	text-shadow:0 1px 0 #ccc,
+				0 2px 0 #c9c9c9,
+				0 3px 0 #bbb,
+				0 4px 0 #b9b9b9,
+				0 5px 0 #aaa,
+				0 6px 1px rgba(0,0,0,.1),
+				0 0 5px rgba(0,0,0,.1),
+				0 1px 3px rgba(0,0,0,.3),
+				0 3px 5px rgba(0,0,0,.2),
+				0 5px 10px rgba(0,0,0,.25),
+				0 10px 10px rgba(0,0,0,.2),
+				0 20px 20px rgba(0,0,0,.15);
+	font-size: 150%;
+}
+
+.message {
+	list-style: none;
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-400%, 0, 0) rotate3d(0, 0, 1, -360deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rollIn {
+  animation-name: rollIn;
+}
+
+.spoke {
+	display: inline-block;
+	font-size: 5em;
+	position: relative;
+}
+
+.wheel-0-social {
+	background-color: #333;
+	border: 25px solid black;
+	border-radius: 50%;
+	height: 300px;
+	padding: 20px;
+	text-align: center;
+	width: 300px;
+}
+
+.wheel-0-social:hover {
+	background-color: #000;
+}
+
+/**
+ * IDs
+ */
+#about {
+	background-image: linear-gradient(#fff, rgba(0,0,0,0.4));
+	height: 100%;
+	padding-top: 50px;
+}
+
+#contact {
+	height: 100%;
+	padding-top: 50px;
+}
+
+#contact h2 {
+	font-size: 400%;
+	left: -25%;
+	top: -350px;
+	position: relative;
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	-webkit-transform: rotate(-90deg); /* Safari */
+	transform: rotate(-90deg);
+}
+
+#descriptors {
+	margin-right:auto;
+	margin-left:auto;
+	width:70%;
+}
+
+#header {
+	min-height: 100%;
+	position: relative;
+}
+
+#home {
+	background-image: linear-gradient(to right, #fff, rgba(0,0,0,0.4)), url('../images/jumbo-bg.jpg');
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	border-radius: 25px;
+}
+
+#invis {
+	height: 300px;
+}
+
+#invis-text {
+	display: none;
+}
+
+#port-head {
+	text-align: center;
+}
+#portfolio {
+	background-image: linear-gradient(rgba(0,0,0,0.4), #fff);
+	height: 100%;
+	padding-top: 50px;
+}
+
+#spoke-one {
+	-ms-transform: rotate(-55deg); /* IE 9 */
+	-webkit-transform: rotate(-55deg); /* Safari */
+	transform: rotate(-55deg);
+}
+
+#spoke-two {
+
+	top: -30px;
+	left: 15px;
+}
+
+#spoke-three {
+	top: 10px;
+	left: 15px;
+	-ms-transform: rotate(65deg); /* IE 9 */
+	-webkit-transform: rotate(65deg); /* Safari */
+	transform: rotate(65deg);
+}
+
+#spoke-four {
+	top: -10px;
+	left: -5px;
+	-ms-transform: rotate(245deg); /* IE 9 */
+	-webkit-transform: rotate(245deg); /* Safari */
+	transform: rotate(245deg);
+}
+
+#spoke-five {
+	top: 40px;
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Safari */
+	transform: rotate(180deg);
+}
+
+#spoke-six {
+	top: -5px;
+	left: 10px;
+	-ms-transform: rotate(115deg); /* IE 9 */
+	-webkit-transform: rotate(115deg); /* Safari */
+	transform: rotate(115deg);
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
